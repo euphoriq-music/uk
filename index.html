@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barriecito&family=Barrio&family=Codystar:wght@300;400&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Coming+Soon&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Crafty+Girls&family=Gloria+Hallelujah&family=Honk&family=Indie+Flower&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Klee+One&family=Kranky&family=Lacquer&family=Londrina+Outline&family=Nanum+Pen+Script&family=Shadows+Into+Light&family=Train+One&family=Waiting+for+the+Sunrise&family=Zeyada&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Playwrite+BE+WAL:wght@100..400&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>euphoriq. - Dark Ambient Artist</title>
+    <style>
+        /* General Body Styling */
+        a{
+            text-decoration: none;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0A0A1A;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        .logo {
+            font-size: 30px;
+            font-weight: 800;
+            color: #4FD1C5;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family: "Edu AU VIC WA NT Dots", cursive;
+        }
+        
+
+        nav {
+            display: flex;
+            justify-content: center; 
+            gap: 30px; /* Space between links */
+            margin: 10px 0;
+            padding-right:50px;
+        }
+
+        nav a {
+            color: #D4E7F5;
+            text-decoration: none;
+            font-size: 25px;
+            transition: color 0.3s;
+            padding-left: 10px;
+             font-family: "Zeyada", serif;
+        }
+
+        nav a:hover {
+            color: #4FD1C5;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .latest-release img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border: 2px solid #4FD1C5;
+            box-shadow: 0 0 20px rgba(79, 209, 197, 0.7);
+            margin-top: 30px;
+        }
+
+        /* Button Styling */
+        button {
+            margin-top: 30px;
+            padding: 5px 20px; /* Increased padding for a larger button */
+            background-color: #0A0A1A; /* Dark blue background */
+            color: #4FD1C5; /* Cyan text color */
+            border: 2px solid #4FD1C5; /* Cyan-colored border */
+            font-size: 1.2em; /* Slightly larger font size for the button overall */
+            cursor: pointer;
+            border-radius: 5px; /* Remove border-radius for a square button */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Vertically center the content */
+            transition: 2s;
+        }
+
+        .button-text {
+            font-size: 15px; /* Set text size to 5px */
+            margin: 0; /* Remove margin for better alignment */
+           font-family: "Courier Prime", serif;
+        }
+
+        button img.button-icon2 {
+            width: 40px; /* Set icon width */
+            height: 40px; /* Set icon height */
+            margin-right: 20px; /* Space between icon and text */
+            border: none; /* Ensures no border */
+            box-shadow: none; /* Ensures no shadow */
+        }
+
+        button:hover {
+            background-color: transparent; /* Fully transparent background on hover */
+            color: #4FD1C5; /* Cyan color remains for the text */
+            transform: scale(1.1) rotate(-5deg); /* Slight scaling and rotation for fancy effect */
+            border: 2px solid #4FD1C5; /* Keep cyan border */
+            box-shadow: 0 10px 20px rgba(79, 209, 197, 0.5); /* Adds a shadow for emphasis */
+        }
+
+        /* Footer Styling */
+        .footer-links {
+            display: flex;
+            justify-content: center; /* Center the footer links */
+            gap: 15px; /* Space between icons */
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+             font-family: "Lacquer", system-ui;
+            color: #4FD1C5; /* Cyan color for the icons */
+            transition: color 0.3s, transform 0.3s, background-color 0.3s; /* Smooth transitions */
+            font-size: 1.1em; /* Larger icon size for visibility */
+            transition: 1s;
+        }
+
+        .footer-links a:hover {
+            color: #3FAFAA; /* Change color on hover */
+            transform: scale(1.2); /* Slightly increase size on hover */
+        }
+
+        .social {
+            margin-top: 10px;
+            font-family: "Courier Prime", serif;
+        }
+        
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    background-color: #0A0A1A; /* Background color of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4FD1C5; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners for the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3FAFAA; /* Darker color on hover */
+}
+        /* Custom Cursor Style */
+body {
+    cursor: url('images/cursor2.png') 16 16, auto; /* Hotspot at 16,16 */
+}
+.logo-link {
+            text-decoration: none; /* Remove underline from link */
+
+    </style>
+</head>
+
+<body>
+    <!-- Artist Name in Center -->
+    <a href="index.html" class="logo-link"> <!-- Add your desired link here -->
+        <div class="logo">euphoriq.</div>
+    </a>
+
+    <!-- Platform Links in Center -->
+    <nav>
+        <a href="https://open.spotify.com/artist/1Gy2zgOIACAXaksbDCxn24?si=McOIi9ReQ2OXkHRs3Y0s9A">spotify</a>
+        <a href="https://www.tiktok.com/@euphoriq.music?is_from_webapp=1&sender_device=pc">tiktok</a>
+         <a href="https://soundcloud.com/euphoriq-820485308">soundcloud</a>
+         
+       <!-- <a href="about.html">about</a>-->
+       
+        <a href="about.html">b-t-s</a>
+    </nav>
+
+    <!-- Main Section with Image and Pre-save Button -->
+    <section class="main-content">
+        <div class="latest-release">
+            <img src="profilepic.jpg" alt="Latest Release">
+        </div>
+        
+        <br><br>
+
+   <a href="https://distrokid.com/hyperfollow/euphoriq/somedays-are-good" target="_blank">
+    <button>
+        <img src="somedays%20are%20good%20coverart.jpg" alt="Icon" class="button-icon2"> <!-- Small image/icon inside the button -->
+        <p class="button-text">pre-save upcoming debut single - somedays are good</p> <!-- Text for the button -->
+    </button>
+   </a>
+   
+    <a href="https://distrokid.com/hyperfollow/euphoriq/sleeping-soul-3" target="_blank">
+    <button>
+        <img src="sleeping%20soul%20final%20coverart.jpg" alt="Icon" class="button-icon2"> <!-- Small image/icon inside the button -->
+        <p class="button-text">pre-save upcoming single - sleeping soul</p> <!-- Text for the button -->
+    </button>
+   </a>
+    
+
+    <br><br><br>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://open.spotify.com/artist/1Gy2zgOIACAXaksbDCxn24?si=McOIi9ReQ2OXkHRs3Y0s9A"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/euphoriq.music/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@euphoriq.music?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+            <a href="https://soundcloud.com/euphoriq-820485308"><i class="fab fa-soundcloud"></i></a>
+            <a href="https://www.youtube.com/channel/UCrJWGSChZ1cwA1-vpKyf05w"><i class="fab fa-youtube"></i></a>
+            <a href="https://euphoriq.bandcamp.com"><i class="fab fa-bandcamp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61566836594180"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:euphoriq13@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <div class="social">
+            <p>@ 2024 euphoriq.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
