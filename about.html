@@ -207,6 +207,12 @@
     display: block; /* Ensures the video takes up the block space */
     margin-bottom: 10px; /* Adds some space between the video and the caption */
 }
+        .video-container img {
+    width: 100%; /* Makes the video responsive */
+    max-width: 600px; /* Optional: limits the max width of the video */
+    display: block; /* Ensures the video takes up the block space */
+    margin-bottom: 10px; /* Adds some space between the video and the caption */
+}
 
 .video-caption {
     font-family: 'Courier Prime', serif; /* Or any font of your choice */
@@ -260,7 +266,7 @@
     
 <div class="bts-item left">
     <div class="video-container">
-        <video src="setup3.jpg"></video>
+        <img src="setup3.jpg"></img>
         <p class="video-caption">constantly working on new projects</p>
     </div>
 </div>
